@@ -1,6 +1,6 @@
 import 'package:dog_breeds/common/constants/assets_images.dart';
 import 'package:dog_breeds/common/constants/parameters.dart';
-import 'package:dog_breeds/common/data/bloc/dogs_bloc.dart';
+import 'package:dog_breeds/common/data/bloc/dogs/dogs_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

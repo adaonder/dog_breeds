@@ -7,7 +7,6 @@ class DogApiClient {
   final httpClientProvider = Dio(BaseOptions(baseUrl: Parameters.baseUrl));
 
   Future<ApiResponse<Map<String, dynamic>>> getDogBreeds() async {
-    //debugPrint("httpClientProvider baseUrl: ${httpClientProvider.options.baseUrl}");
 
     final result = await httpClientProvider.get(Parameters.breedsAll);
 
@@ -24,7 +23,6 @@ class DogApiClient {
   }
 
   Future<ApiResponse> getDogBreedImageUrl(String breed) async {
-    //debugPrint("httpClientProvider baseUrl: ${httpClientProvider.options.baseUrl}");
 
     final result = await httpClientProvider.get(Parameters.imageUrl.replaceFirst("breedVar", breed));
 

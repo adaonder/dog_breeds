@@ -54,6 +54,9 @@ dependencies:
 
   #Font
   google_fonts: ^6.1.0
+  
+  #App Info
+  package_info_plus: ^5.0.0
 
 
 

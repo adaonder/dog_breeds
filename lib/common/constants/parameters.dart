@@ -9,4 +9,5 @@ class Parameters {
   ///Page Names
   static const pageSplash = '/';
   static const pageHome = '/pageHome';
+  static const pageSettings = '/pageSettings';
 }

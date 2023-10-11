@@ -1,4 +1,5 @@
-import 'package:dog_breeds/common/data/bloc/dogs_bloc.dart';
+import 'package:dog_breeds/common/data/bloc/dogs/dogs_bloc.dart';
+import 'package:dog_breeds/common/data/bloc/random_image/random_image_bloc.dart';
 import 'package:dog_breeds/common/data/getit/locator.dart';
 import 'package:dog_breeds/common/util/route_generator.dart';
 import 'package:flutter/material.dart';
@@ -32,6 +33,11 @@ Widget initProvider() {
         return DogsBloc();
       },
     ),
+    BlocProvider(
+      create: (context) {
+        return RandomImageBloc();
+      },
+    ),
   ], child: const MyApp());
 }
 
@@ -45,7 +51,7 @@ class MyApp extends StatelessWidget {
       title: '\$appNation',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
       onGenerateRoute: RouteGenerator.routeGenerator,
